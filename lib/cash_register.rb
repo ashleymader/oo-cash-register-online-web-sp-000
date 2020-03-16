@@ -5,6 +5,7 @@ class CashRegister
     @total = 0 
     @discount = discount 
     @items = []
+    @last_transaction = []
   end
     
   def add_item(items, price, quantity=1)
@@ -19,6 +20,7 @@ class CashRegister
     else 
       @items << items
     end
+    @last_transaction << @items, @price, @quantity
   end 
   
   def apply_discount
