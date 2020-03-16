@@ -36,6 +36,7 @@ class CashRegister
     @total -= @price
     if items == nil 
       @total.clear
+    end
   end
   
 end
